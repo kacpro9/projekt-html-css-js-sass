@@ -249,9 +249,134 @@ body {
   color: #888888;
 }
 
-.conatiner {
+.container {
   max-width: 100%;
   width: 100%;
-  padding: 0 23px;
+  padding: 0px 23px;
   margin: 0 auto;
+}
+
+@media all and (min-width: 992px) {
+  .conatiner {
+    max-width: 960px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .conatiner {
+    max-width: 1140px;
+  }
+}
+.main-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  padding: 12px 0px;
+}
+.main-nav .main-nav-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-nav .brand {
+  height: 50px;
+  display: inline-block;
+}
+.main-nav .brand img {
+  height: 100%;
+}
+.main-nav .mobile-close, .main-nav .mobile-hamburger {
+  font-size: 28px;
+  line-height: 50px;
+  cursor: pointer;
+}
+.main-nav .mobile-hamburger {
+  color: #1ba4ce;
+}
+.main-nav .mobile-close {
+  color: #fff;
+  text-align: right;
+  height: 50px;
+}
+.main-nav .open-menu-holder {
+  position: fixed;
+  background-color: #1ba4ce;
+  top: 0;
+  right: 0;
+  max-width: 480px;
+  width: 480px;
+  text-align: right;
+  padding: 12px 23px;
+  display: none;
+}
+.main-nav .open-menu-holder.open {
+  display: block;
+}
+.main-nav .open-menu-holder .menu {
+  list-style: none;
+}
+.main-nav .open-menu-holder .menu .menu-item {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.main-nav .open-menu-holder .menu .menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+@media all and (min-width: 992px) {
+  .main-nav .main-nav-holder {
+    justify-content: flex-start;
+  }
+  .main-nav .brand {
+    height: 80px;
+  }
+  .main-nav .mobile-hamburger, .main-nav .mobile-close {
+    display: none;
+  }
+  .main-nav .open-menu-holder {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+    align-self: flex-start;
+  }
+  .main-nav .open-menu-holder .menu {
+    background-color: #fff;
+  }
+  .main-nav .open-menu-holder .menu .menu-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: initial;
+  }
+  .main-nav .open-menu-holder .menu .menu-item a {
+    color: #473452;
+    font-weight: 700;
+  }
+}
+
+.main-header {
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.main-header .header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 30%;
+  z-index: 100000;
+  display: none;
+}
+.main-header .header-flowers {
+  max-width: 8%;
+  position: absolute;
+  left: 0;
+  top: 35%;
 }/*# sourceMappingURL=style.css.map */

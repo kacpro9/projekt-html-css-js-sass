@@ -7,16 +7,16 @@ body {
   color: $primary-text-color;
 }
 
-.conatiner {
+.container {
   max-width: $small-conatiner;
   width: $small-conatiner;
-  padding: 0 23px;
+  padding: 0px 23px;
   margin: 0 auto;
 }
 
 @media all and (min-width: $large) {
   .conatiner {
-    max-width: $large-conatiner;
+    max-width: $large-container;
   }
 }
 

@@ -1,0 +1,22 @@
+.main-header {
+  height: 700px;
+  @include flexbox;
+  @include flex-align(flex-start, center);
+  position: relative;
+
+  .header-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 30%;
+    z-index: 100000;
+    display: none;
+  }
+
+  .header-flowers {
+    max-width: 8%;
+    position: absolute;
+    left: 0;
+    top: 35%;
+  }
+}
