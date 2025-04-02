@@ -7,6 +7,24 @@ body {
   color: $primary-text-color;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $secondary-font;
+  color: $secondary-color;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  transition: all 0.3s;
+}
+
 .container {
   max-width: $small-conatiner;
   width: $small-conatiner;
@@ -14,9 +32,21 @@ body {
   margin: 0 auto;
 }
 
+p {
+  line-height: 1.5;
+}
+
+section {
+  padding: 30px 0;
+}
+
 @media all and (min-width: $large) {
   .conatiner {
     max-width: $large-container;
+  }
+
+  section {
+    padding: 60px 0;
   }
 }
 

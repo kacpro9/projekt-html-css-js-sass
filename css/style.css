@@ -249,6 +249,24 @@ body {
   color: #888888;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bellota", sans-serif;
+  color: #473452;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+a {
+  transition: all 0.3s;
+}
+
 .container {
   max-width: 100%;
   width: 100%;
@@ -256,9 +274,20 @@ body {
   margin: 0 auto;
 }
 
+p {
+  line-height: 1.5;
+}
+
+section {
+  padding: 30px 0;
+}
+
 @media all and (min-width: 992px) {
   .conatiner {
     max-width: 960px;
+  }
+  section {
+    padding: 60px 0;
   }
 }
 @media all and (min-width: 1200px) {
@@ -366,6 +395,48 @@ body {
   align-items: center;
   position: relative;
 }
+.main-header .header-description {
+  color: #473452;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Bellota", sans-serif;
+  font-weight: 700;
+}
+.main-header h1 {
+  color: #555;
+  font-size: 50px;
+}
+.main-header .main-header-content {
+  color: #555;
+}
+.main-header .buttons-panel {
+  margin-top: 40px;
+}
+.main-header .buttons-panel .reserve {
+  display: inline-block;
+  padding: 14px 20px;
+  color: #fff;
+  background-color: #1ba4ce;
+  text-decoration: none;
+}
+.main-header .buttons-panel .reserve:hover {
+  background-color: #30383b;
+}
+.main-header .buttons-panel .watch {
+  color: #473452;
+  display: inline-block;
+  margin-left: 15px;
+  text-decoration: none;
+}
+.main-header .buttons-panel i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #473452;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
 .main-header .header-bg {
   position: absolute;
   top: 0;
@@ -379,4 +450,59 @@ body {
   position: absolute;
   left: 0;
   top: 35%;
+  z-index: -1;
+}
+@media all and (min-width: 1200px) {
+  .main-header .header-bg {
+    max-width: 40%;
+  }
+}
+@media all and (min-width: 992px) {
+  .main-header .header-bg {
+    display: block;
+  }
+  .main-header .main-header-holder {
+    width: 60%;
+  }
+}
+@media all and (min-width: 480px) {
+  .main-header .buttons-panel .reserve .watch {
+    margin: 0;
+  }
+}
+
+.about {
+  text-align: center;
+}
+.about .about-header img {
+  max-width: 100px;
+}
+.about .about-header .about-header-description {
+  color: #473452;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.about .about-content {
+  max-width: 850px;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 26px;
+}
+
+.btn-primary {
+  border-radius: 30px;
+  display: inline-block;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #1ba4ce;
+}
+.btn-primary:hover {
+  background-color: #30383b;
 }/*# sourceMappingURL=style.css.map */
